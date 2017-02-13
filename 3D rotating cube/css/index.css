@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.view{
+    width: 180px;
+    height: 180px;
+    margin: 100px auto;
+    
+}
+header{
+    text-align: center;
+    font-size: 20px;
+}
+.box{
+    animation: cube_animation ease-in-out 6s infinite forwards;  
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 90px 90px 90px;
+}
+/*魔方动画效果*/
+@keyframes cube_animation{
+    
+    16%{
+        transform: rotatey(-90deg);
+    }
+    33%{
+        transform: rotatey(-90deg) rotatez(135deg);
+    }
+    50%{
+        transform: rotatey(225deg) rotatez(135deg);
+    }
+    66%{
+        transform: rotatey(135deg) rotatex(135deg);
+    }
+    83%{
+        transform: rotatex(135deg);
+    }
+}
+/*魔方六面*/
+.aside{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+
+}
+.aside div{
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    float: left;
+    border: 3px solid #000;
+    background: green;
+}
+.bside{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    transform: translatex(-90px) translatez(90px) rotatey(90deg);
+}
+.bside div{
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    float: left;
+    border: 3px solid #000;
+    background: orange;
+}
+.cside{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    transform: translatez(90px) translatey(90px) rotatex(90deg);
+}
+.cside div{
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    float: left;
+    border: 3px solid #000;
+    background: blue;
+}
+.dside{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    transform: translatez(180px);
+}
+.dside div{
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    float: left;
+    border: 3px solid #000;
+    background: red;
+}
+.eside{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    transform: translatez(90px) translatey(-90px) rotatex(90deg);
+}
+.eside div{
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    float: left;
+    border: 3px solid #000;
+    background: pink;
+}
+.fside{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    transform: translatex(90px) translatez(90px) rotatey(90deg);
+}
+.fside div{
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    float: left;
+    border: 3px solid #000;
+    background: #fff;
+}
