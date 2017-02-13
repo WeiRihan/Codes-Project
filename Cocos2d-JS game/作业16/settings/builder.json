@@ -1,0 +1,17 @@
+{
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSdk": [
+    "anysdk"
+  ],
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.polished_project",
+  "startScene": "0b9c76e0-2054-4eea-a6d9-040d0aa037f0",
+  "title": "weirihan",
+  "webOrientation": "auto"
+}
