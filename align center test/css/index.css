@@ -1,0 +1,75 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+article{
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -170px;
+
+}
+div{
+    width: 100px;
+    height: 100px;
+    /*边框阴影效果*/
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,.5);
+}
+/*上面DIV*/
+.first{
+    margin: 10px auto;
+    background-color: #00f;
+}
+/*左一DIV*/
+.second{
+    margin-left:10px;
+    display: inline-block;
+    float: left;
+    background-color: #f0f;
+}
+/*中间DIV*/
+.third{
+    margin-left:10px;
+    display: inline-block;
+    float: left;
+    background-color: #fff;
+    /*小图片居中方法二：
+    display: flex;是css3布局属性，遗憾的是只有谷歌和火狐支持*/
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/ 
+    /*小图片居中方法三：*/
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /*小图片居中方法四：*/
+    /*line-height: 100px;
+    text-align: center;*/
+
+}
+.third img{
+    width: 24px;
+    height: 24px;
+    /*居中方法一：直接计算不够准确*/
+    /*position: relative;
+    top: 38px;
+    left: 38px;*/
+
+}
+/*右一DIV*/
+.fourth{
+    margin-left:10px;
+    display: inline-block;
+    float: left;
+    background-color: #0f0;
+}
+/*下面DIV*/
+.fifth{
+    margin: 120px auto 0px;
+    background-color: #f00;
+}
+
