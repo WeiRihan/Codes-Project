@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>xx后台管理系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <img src="img/logo.jpg" alt="logo" />
+            <h1>XX系统管理平台<small>3.0</small></h1>
+            <div class="btn-group exit">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    用户
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#">高级</a>
+                    </li>
+                    <li>
+                        <a href="#">设置</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="index.html">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-2">
+            <ul class="nav nav-pills nav-stacked" role="tablist">
+                <li data-toggle="collapse" data-target="#bootstrap" role="presentation">
+                    <a href="#">Bootstrap</a>
+                    <ul id="bootstrap" class="nav nav-stacked collapse">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-pencil"></span>预处理脚本
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-star"></span>优站精选
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li data-toggle="collapse" data-target="#start" role="presentation">
+                    <a href="#">起步</a>
+                    <ul id="start" class="nav  nav-stacked collapse">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-arrow-down"></span>下载
+                            </a>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-book"></span>基本模板</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>工具</a></li>
+                    </ul>
+                </li>
+                <li data-toggle="collapse" data-target="#allcss">
+                    <a href="#">全局CSS样式</a>
+                    <ul id="allcss" class="nav collapse">
+                        <li><a href="#"><span class="glyphicon glyphicon-asterisk"></span>栅格系统</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-th"></span>排版</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-font"></span>代码</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10 article">
+            <table class="table table-striped">
+                <caption>操作日志</caption>
+                <tr>
+                    <th>用户名称</th>
+                    <th>用户类型</th>
+                    <th>操作</th>
+                    <th>时间</th>
+                </tr>
+                <tr>
+                    <td>admin</td>
+                    <td>管理员</td>
+                    <td>无</td>
+                    <td>2016-10</td>
+                </tr>
+                <tr>
+                    <td>admin</td>
+                    <td>管理员</td>
+                    <td>无</td>
+                    <td>2016-10</td>
+                </tr>
+                <tr>
+                    <td>admin</td>
+                    <td>管理员</td>
+                    <td>无</td>
+                    <td>2016-10</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <p class="copyright">XX公司版权所有</p>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

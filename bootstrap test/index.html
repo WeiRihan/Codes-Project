@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>后台登陆界面</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <article>
+        <div class="container">
+            <h1>网站后台管理系统</h1>
+            <!-- input Name -->
+            <form class="form-horizontal center-block" role="form">
+                <div class="form-group col-md-offset-3">
+                    <label for="inputName" class="col-sm-2 col-xs-3 col-xs-offset-2 control-label">用户名</label>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <input type="text" class="form-control" id="inputName" placeholder="请输入用户名"/>
+                    </div>
+                </div>
+                <!-- input Password -->
+                <div class="form-group">
+                    <label for="inputPassword" class="col-sm-2 col-xs-3 col-xs-offset-2 control-label">密码</label>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="请输入密码">
+                    </div>
+                </div>
+                <!-- input Verfication -->
+                <div class="form-group">
+                    <label for="inputVerfication" class="col-sm-2 col-xs-3 col-xs-offset-2 control-label">验证码</label>
+                    <div class="col-md-2 col-sm-2 col-xs-4">
+                        <input type="password" class="form-control" id="inputVerfication" placeholder="请输入验证码" />
+                    </div>
+                    <div class="col-md-1 col-md-offset-1">
+                        <img src="img/ysve.jpg" alt="验证码" />
+                    </div>
+                </div>
+                <!-- login button -->
+                <div class="form-group">
+                    <a href="home.html"><button type="button" class="btn btn-primary col-xs-3 col-xs-offset-4">登录</button></a>
+                </div>
+            </form>
+        </div>
+    </article>
+</body>
+
+</html>
