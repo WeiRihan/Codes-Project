@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <h1>简易计算器</h1>
+    <article>
+        <table border="1">
+            <tr rowspan="3">
+                <td colspan="4" class="right">
+                    <span id="result"> </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="gray" rowspan="2">
+                    <a href="#" onclick="clean()">C</a>
+                </td>
+                <td class="gray" colspan="2">
+                    <a href="#" onclick="num('+/-')">+/-</a>
+                </td>
+                <td class="oper">
+                    <a href="#" onclick="handle('%')">%</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="gray">
+                    <a href="#" onclick="getSin()">sin</a>
+                </td>
+                <td class="gray">
+                    <a href="#" onclick="getCos()">cos</a>
+                </td>
+                <td class="oper">
+                    <a href="#" onclick="handle('÷')">÷</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" onclick="num(7)">7</a>
+                </td>
+                <td>
+                    <a href="#" onclick="num(8)">8</a>
+                </td>
+                <td>
+                    <a href="#" onclick="num(9)">9</a>
+                </td>
+                <td class="oper">
+                    <a href="#" onclick="handle('×')">×</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="num(4)">4</a></td>
+                <td><a href="#" onclick="num(5)">5</a></td>
+                <td><a href="#" onclick="num(6)">6</a></td>
+                <td class="oper">
+                    <a href="#" onclick="handle('-')">-</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="num(1)">1</a></td>
+                <td><a href="#" onclick="num(2)">2</a></td>
+                <td><a href="#" onclick="num(3)">3</a></td>
+                <td class="oper">
+                    <a href="#" onclick="handle('+')">+</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="#" onclick="num(0)" class="left">0</a>
+                </td>
+                <td>
+                    <a href="#" onclick="num('.')">.</a>
+                </td>
+                <td class="oper">
+                    <a href="#" onclick="equal()">=</a>
+                </td>
+            </tr>
+        </table>
+    </article>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+table{  
+    margin: 0 auto;
+    border-collapse:collapse;
+    border: 1px solid #000;
+
+}
+table tr td{
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #000;/*兼容ie*/
+}
+h1{
+    text-align: center;
+}
+a{
+    display: inline-block;
+    width: 73px;
+    height: 53px;
+    line-height: 50px;
+    color: #000;
+    text-decoration: none;
+}
+
+#result{
+    display: inline-block;
+    width: 209px;
+    height: 100px;
+    text-align: right;
+    line-height: 120px;
+    padding-right: 10px;
+    font-size: 48px;/*rem不兼容ie8*/
+    color: #fff;
+    box-sizing: border-box;
+}
+.right{
+    background: #000;
+}
+
+.gray{
+    background: #ddd;
+}
+.left{
+    width: 86px;
+    text-align: left;
+}
+
+.oper{
+    background: #ff9800;
+}
