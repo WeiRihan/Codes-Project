@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <title>百度后台管理</title>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">百度新闻后台</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新闻编辑</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="newsTitle">新闻标题</label>
+                            <input type="text" class="form-control" id="newsTitle" placeholder="请输入新闻标题">
+                        </div>
+                        <div class="form-group">
+                            <label for="newsType">新闻类型</label>
+                            <select class="form-control" id="newsType">
+                                <option value="精选" selected>精选</option>
+                                <option value="百家">百家</option>
+                                <option value="本地">本地</option>
+                                <option value="图片">图片</option>
+                                <option value="娱乐">娱乐</option>
+                                <option value="社会">社会</option>
+                                <option value="军事">军事</option>
+                                <option value="女人">女人</option>
+                                <option value="科技">科技</option>
+                                <option value="互联网">互联网</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="newsImg">新闻图片</label>
+                            <input type="text" class="form-control" id="newsImg" placeholder="请输入图片路径">
+                        </div>
+                        <div class="form-group">
+                            <label for="newsTime">新闻时间</label>
+                            <input type="date" class="form-control" id="newsTime">
+                        </div>
+                        <div class="form-group">
+                            <label for="newsSrc">新闻来源</label>
+                            <input type="text" class="form-control" id="newsSrc" placeholder="请输入新闻来源">
+                        </div>
+                        <button class="btn btn-primary" id="btnsubmit">提交新闻</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新闻列表</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td width="5%">id</td>
+                                    <td width="10%">类型</td>
+                                    <td width="25%">新闻标题</td>
+                                    <td width="20%">图片地址</td>
+                                    <td width="20%">新闻来源</td>
+                                    <td width="20%">操作</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 自动增加内容 -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">警告</h4>
+                </div>
+                <div class="modal-body">
+                    删除无法恢复
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="confirmDelete">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- update Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">编辑</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="newsTitle">新闻标题</label>
+                            <input type="text" class="form-control" id="unewsTitle" placeholder="请输入新闻标题">
+                        </div>
+                        <div class="form-group">
+                            <label for="newsType">新闻类型</label>
+                            <select class="form-control" id="unewsType">
+                                <option value="精选" selected>精选</option>
+                                <option value="百家">百家</option>
+                                <option value="本地">本地</option>
+                                <option value="图片">图片</option>
+                                <option value="娱乐">娱乐</option>
+                                <option value="社会">社会</option>
+                                <option value="军事">军事</option>
+                                <option value="女人">女人</option>
+                                <option value="科技">科技</option>
+                                <option value="互联网">互联网</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="newsImg">新闻图片</label>
+                            <input type="text" class="form-control" id="unewsImg" placeholder="请输入图片路径">
+                        </div>
+                        <div class="form-group">
+                            <label for="newsTime">新闻时间</label>
+                            <input type="date" class="form-control" id="unewsTime">
+                        </div>
+                        <div class="form-group">
+                            <label for="newsSrc">新闻来源</label>
+                            <input type="text" class="form-control" id="unewsSrc" placeholder="请输入新闻来源">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="confirmUpdate">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/admin.js"></script>
+</body>
+
+</html>
