@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 1000px;
+    font: 12px arial;
+}
+/*页面头部导航
+*/
+header nav {
+    margin: 11px 3px 20px 0px;
+    float: right;
+}
+
+header nav a {
+    margin-left: 17px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #000;
+}
+
+header nav a:hover,
+.set:hover {
+    color: #00f;
+}
+
+.login,
+.set {
+    font-weight: normal;
+}
+
+.set {
+    margin-left: 17px;
+    display: inline-block;
+    position: relative;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.more {
+    width: 60px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 5px 0 19px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background: #38f;
+}
+
+
+/*“设置”弹出框*/
+
+.set:hover > .setbox {
+    display: block;
+}
+
+.setbox {
+    display: none;
+    width: 70px;
+    height: 104px;
+    position: absolute;
+    top: 200%;
+    left: -100%;
+    text-align: center;
+    font-weight: normal;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .2);
+    border: 1px solid #999;
+}
+
+.setbox a {
+    display: block;
+    width: 70px;
+    height: 26px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #333;
+}
+
+.setbox a:hover {
+    color: #fff;
+    background: #38f;
+}
+
+
+/*“设置”弹出框中的三角形气泡*/
+
+.arrow {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -20%;
+    left: 35%;
+    border: 10px solid #999;
+    border-color: transparent transparent #999;
+}
+
+.smallarrow {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -19%;
+    left: 35%;
+    border: 10px solid #fff;
+    border-color: transparent transparent #fff;
+}
+/*“更多内容”弹出框*/
+.morebox {
+    width: 85px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    border-left: 1px solid #e7e7e7;
+}
+
+.more:hover > .morebox {
+    display: block;
+}
+
+.morebox a {
+    display: block;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    font-weight: normal;
+    color: #666;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+}
+
+.morebox a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+.morebox .more1 {
+    display: block;
+    width: 60px;
+    height: 24px;
+    margin: 10px auto;
+}
+
+.morebox span {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png) no-repeat;
+    cursor: pointer;
+}
+
+span.music {
+    background-position: -72px 0;
+}
+
+span.pic {
+    background-position: -112px 0;
+}
+
+span.konw {
+    background-position: -36px 0;
+}
+
+span.essay {
+    background-position: -148px 0;
+}
+
+span.top {
+    background-position: -184px 0;
+}
+
+a.allproduct {
+    margin: 10px auto;
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: left;
+    border-bottom: none;
+    color: #666;
+}
+
+
+/*主体内容*/
+
+article {
+    clear: both;
+    text-align: center;
+}
+
+article img {
+    width: 270px;
+    height: 129px;
+}
+
+article input {
+    width: 540px;
+    height: 34px;
+    margin: 22px 0px 0px 0px;
+    border: 1px solid #aaa;
+}
+
+article input:hover {
+    border: 1px solid #666;
+}
+
+article input:focus {
+    border: 1px solid #317ef3;
+}
+
+article button {
+    width: 100px;
+    height: 38px;
+    font-size: 15px;
+    color: #fff;
+    background: #317ef3;
+    border: 1px solid #317ef3;
+}
+
+
+/*页面底部*/
+
+footer {
+    margin-top: 290px;
+    color: #888;
+    text-align: center;
+}
+
+table {
+    width: 640px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+table td {
+    margin-left: 35px;
+    line-height: 22px;
+}
+
+table a {
+    margin-right: 18px;
+    color: #999;
+}
+
+a.read {
+    margin: 0;
+}
+
+.about {
+    font-size: 10px;
+    text-align: left;
+    line-height: 22px;
+}
+
+table b {
+    color: #666;
+}
+
+table i {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_0e814c16.png) no-repeat;
+}
+
+i.jgwablogo {
+    background-position: -623px -96px;
+}
+
+i.icrlogo {
+    background-position: -600px -96px;
+}

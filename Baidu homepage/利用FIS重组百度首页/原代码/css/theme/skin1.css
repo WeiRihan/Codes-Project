@@ -1,0 +1,17 @@
+body{
+    background: url(../image/skin1.jpg) no-repeat;
+    background-size: cover;
+}
+header{
+    background:rgba(15,25,50,.3);
+}
+nav a{
+    color: #fff;
+}
+#img-logo{
+    width: 270px;
+    height: 129px;
+    background: url(../image/logo_white.png) no-repeat;
+    background-size: 270px 129px;
+    margin: 0 auto;
+}
