@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/baidu.css" />
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <title>百度一下，你就知道</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 页面头部导航 -->
+    <header>
+        <div class="header-wrap">
+            <!-- 天气预报 -->
+            <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=99" width="130" height="25" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            <nav class="left-nav">
+                <span>|</span>
+                <a href="http://vip.baidu.com/act/xuyuan">宝箱</a>
+                <a href="#" class="skin">换肤</a>
+                <a href="">消息</a>
+            </nav>
+            <nav class="right-nav">
+                <a href="http://www.nuomi.com/?cid=002540" target="_blank">糯米</a>
+                <a href="http://news.baidu.com/" target="_blank">新闻</a>
+                <a href="http://www.hao123.com/" target="_blank">hao123</a>
+                <a href="http://map.baidu.com/" target="_blank">地图</a>
+                <a href="http://v.baidu.com/?fr=bd" target="_blank">视频</a>
+                <a href="http://tieba.baidu.com/" target="_blank">贴吧</a>
+                <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="username">
+                    百度用户
+                </a>
+                <a class="user-set">设置</a>
+                <a class="more">更多产品
+                </a>
+            </nav>
+            <!-- 设置弹出框 -->
+            <div class="setbox">
+                <div class="arrow"></div>
+                <div class="smallarrow"></div>
+                <a href="javascript:;">搜索设置</a>
+                <a href="https://www.baidu.com/gaoji/advanced.html">高级搜索</a>
+                <a href="javascript:;">关闭预测</a>
+                <a href="javascript:;">搜索历史</a>
+            </div>
+            <!-- 用户弹出框 -->
+            <div class="userbox">
+                <div class="arrow"></div>
+                <div class="smallarrow"></div>
+                <a href="javascript:;">我的VIP</a>
+                <a href="https://www.baidu.com/gaoji/advanced.html">个人中心</a>
+                <a href="javascript:;">账号设置</a>
+                <a href="javascript:;">意见反馈</a>
+                <a href="javascript:;">退出</a>
+            </div>
+            <!-- 百度右侧下拉框 -->
+            <div class="morebox">
+                <div class="more1">更多产品</div>
+                <a href="http://music.baidu.com/"><span class="music"></span>音乐</a>
+                <a href="http://image.baidu.com/"><span class="pic"></span>图片</a>
+                <a href="http://zhidao.baidu.com/"><span class="konw"></span>知道</a>
+                <a href="http://wenku.baidu.com/"><span class="essay"></span>文库</a>
+                <a href="http://top.baidu.com/"><span class="top"></span>风云榜</a>
+                <a href="https://www.baidu.com/more/" class="allproduct">全部产品>></a>
+            </div>
+            <!-- 换肤下拉框 -->
+            <div class="change-skin">
+                <div class="skin-nav">
+                    <ul class="skin-nav-l">
+                        <li>热门</li>
+                        <li>小清新</li>
+                        <li>风景</li>
+                    </ul>
+                    <ul class="skin-nav-r">
+                        <li class="skin-no">不使用皮肤</li>
+                        <li class="skin-hide">收起</li>
+                    </ul>
+                </div>
+                <div class="skin-img-nav">
+                    <img class="skin-img" alt="皮肤" src="image/skin1.jpg" />
+                    <img class="skin-img2" alt="皮肤" src="image/skin2.jpg" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 页面主体 -->
+    <article>
+        <div class="img-logo">
+            <img src="image/bd_logo1.png" alt="百度一下" />
+        </div>
+        <div class="search">
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <input type="text" name="wd" />
+                <span class="picture_btn"></span>
+                <button type="submit">百度一下</button>
+            </form>
+        </div>
+        <div class="content">
+            <nav>
+                <ul class="content-nav">
+                    <li class="active"><span class="icon-login"></span>我的关注</li>
+                    <li>推荐</li>
+                    <li>导航</li>
+                </ul>
+            </nav>
+            <div class="content-tab con-active">
+                <div class="content-tab-title">
+                    <em></em>
+                    <span class="h3-nav">我的导航(4)</span>
+                    <ul class="ul-model">
+                        <li>添加</li>
+                        <li>编辑</li>
+                        <li>分类模式</li>
+                        <li>返利模式</li>
+                    </ul>
+                </div>
+                <ul class="myNav">
+                    <li><img src="image/icon1.png" />hao123</li>
+                    <li><img src="image/icon2.png" />电影天堂</li>
+                    <li><img src="image/icon3.png" />新浪微博</li>
+                    <li><img src="image/icon4.png" />知乎</li>
+                </ul>
+                <div class="diy">
+                    <i class="plus"></i><span>自定义</span>
+                </div>
+            </div>
+            <div class="content-tab">
+                <div class="new-left">
+                    <div class="tips"></div>
+                    <h6>以下信息根据您的兴趣推荐</h6>
+                    <article>
+                        <h1>西伯利亚发现3万年前狮子幼崽 科学家想尝试克隆</h1>
+                        <span class="origin">中国台湾网</span>
+                        <time>11-05 10:43</time>
+                        <hr/>
+                    </article>
+                    <article>
+                        <h1>与127个国家缔结免签协定 中国护照“含金量”提高</h1>
+                        <span class="origin">凤凰网</span>
+                        <time>11-05 16:23</time>
+                        <hr/>
+                    </article>
+                    <article>
+                        <h1>日媒：韩国将举行数万人大规模集会要求朴槿惠下台</h1>
+                        <span class="origin">凤凰网</span>
+                        <time>11-06 13:43</time>
+                        <hr/>
+                    </article>
+                    <article>
+                        <h1>把大米装在瓶子里倒上水，然后晃10秒，奇迹出现了</h1>
+                        <span class="origin">新浪网</span>
+                        <time>11-01 15:43</time>
+                        <hr/>
+                    </article>
+                </div>
+                <div class="new-right">
+                    <h1>实时热点</h1>
+                    <span>林丹升级当爸</span>
+                    <span>农民挖巨无霸红薯</span>
+                    <span>拆免税品乱丢包装</span>
+                    <span>金莎发文报平安</span>
+                    <span>北约空袭塔利班</span>
+                    <span>曝曹云金豪宅内景</span>
+                </div>
+            </div>
+            <div class="content-tab">
+                <h1 class="love-title">猜你喜欢</h1>
+                <div class="love-div">
+                    <a href="#"><img src="image/icon5.png">百度糯米</a>
+                </div>
+                <div class="love-div">
+                    <a href="#"><img src="image/icon6.png">京东商城</a>
+                </div>
+                <div class="love-div">
+                    <a href="#"><img src="image/icon7.png">1号店</a>
+                </div>
+                <div class="love-div">
+                    <a href="#"><img src="image/icon8.png">苏宁易购</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- 页面底部 -->
+    <footer>
+        <div class="footer-wrap">
+            <a href="https://www.baidu.com/cache/sethelp/help.html" target="_blank" class="setindex">设为主页</a> ©2016 Baidu
+            <a href="http://www.baidu.com/duty/" class="read">使用百度前必读</a>
+            <a href="http://jianyi.baidu.com/" class="read"> 意见反馈</a> 京ICP证030173号
+            <i class="icrlogo"></i>
+            <br />
+            <i class="jgwablogo"></i> &nbsp;京公网安备11000002000001号
+        </div>
+    </footer>
+    <!-- 响应式底部
+    <div class="footer-phone">
+        <p><i class="user-icon"></i>用户反馈</p>
+        <p><span>使用百度前必读</span> Baidu 京ICP证030173号</p>
+        <p><i class="police-icon"></i> &nbsp;京公网安备11000002000001号</p>
+    </div>
+    -->
+    <!-- JS引用 -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/baidu.js"></script>
+</body>
+
+</html>
