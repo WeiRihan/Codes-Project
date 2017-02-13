@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <title>baiduNews-php</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="nav-header-container nav-logo cf">
+				<a href="https://m.baidu.com/" class="float-left baidu-icon"></a>
+				<a class="float-left profile-icon"></a>		
+				<a class="float-right subscribe-icon"></a>
+				<a class="float-right search-icon"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a class="active" href="#">精选</a><i></i></li>
+					<li><a href="#">百家</a><i></i></li>
+					<li><a href="#">本地</a><i></i></li>
+					<li><a href="#">图片</a><i></i></li>
+					<li><a href="#">娱乐</a><i></i></li>
+					<li><a href="#">社会</a><i></i></li>
+					<li><a href="#">军事</a><i></i></li>
+					<li><a href="#">互联网</a><i></i></li>
+					<li><a href="#">科技</a><i></i></li>
+					<li><a href="#">女人</a><i></i></li>
+					<li><a href="#">更多</a><i></i></li>				
+				</ul>
+			</nav>	
+		</header>
+		<article class="news-main">
+			<ul class="news-lists">
+			<!-- 新闻自动添加 -->
+				<!-- <li class="news-list">
+					<div class="news-img">
+						<img src="img/newsimg1.jpg"/>
+					</div>
+					<div class="news-content">
+						<h1>习近平出席APEC工商领导人峰会并演讲</h1>
+						<p><span class="news-time">2016年11月20日</span><span class="news-src">热点</span></p>
+					</div>
+				</li> -->
+			</ul>
+		</article>
+	</div>
+
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+	/*nav中三个字及以上的标签占两个位置*/
+		$(document).ready(function(){
+			var diviceWidth=$("body").width();
+			$("header nav li").each(function(index,item){
+				if($(this).find("a").html().split("").length>2){
+					$(this).width(diviceWidth/3);
+				}else{
+					$(this).width(diviceWidth/6);
+				}
+			})
+		})
+	</script>
+	<script type="text/javascript" src="js/news.js"></script>
+</body>
+
+</html>
