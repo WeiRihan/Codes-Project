@@ -1,0 +1,133 @@
+/*变量*/
+@blank: #000;
+@blue: #007aff;
+@red: #EE0000;
+@base-border:1px;
+
+body,h1,h2,h3{
+	margin:0;
+	padding:0;
+}
+body{
+	color: @blank;
+	font-family: "Microsoft Yahei", Helvetica, arial;
+	text-align:center;
+}
+
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+ul,li{
+	list-style:none;
+}
+
+.clear{
+	clear: both;
+}
+/*运算*/
+.container{
+	border:@base-border*2 solid @blank;
+	width:600px;
+	margin:50px auto;
+	border-radius:5px;
+}
+
+/*混合*/
+.float-left(@width:30%){
+	float: left;
+	width:@width;
+}
+/*嵌套*/
+header{
+	.left{
+		.float-left;
+		h1{	
+			margin:10px auto -20px;	
+			font-weight:900;
+		}
+	}
+	.middle{
+		.float-left(40%);
+		p{
+			margin:30px auto;
+		}
+		
+	}
+	.right{
+		.float-left;
+		h3{
+			margin:10px auto 10px;
+			color:@blue;
+			letter-spacing:12px;
+		}
+		h2{
+			display:inline;
+			color:@red;
+			border-bottom:@base-border solid @blank;
+			letter-spacing:0;
+		}
+		hr{
+			width:110px;
+		}
+	}
+}
+
+article{
+	ul{
+		margin:10px auto;
+		li{
+			float:left;
+			width:1.6rem;
+			line-height:100%;
+			.active{
+				border:@base-border solid @red;
+			}
+		}
+	}
+}
+
+footer{
+	color:@blue;
+	h4{
+		float:left;
+		margin: 10px 5px 2px 20px;
+		padding:0;
+	}
+	.arrow1{
+		float:left;
+		margin-top:18px;
+		width:450px;
+		height:8px;
+		background-color:@blue;
+	}
+	.arrow2{
+		float:left;
+		width:0;
+		height:0;
+		margin-top:10px;
+		border:@base-border*16 solid;
+	    border-left: 0;
+	    border-right-color: transparent;
+	    border-top: 0;
+	    border-bottom-color: @blue;
+	}
+	p{
+		margin-top:0;
+		background:@blue;
+		color:#fff;
+	}
+}
+

@@ -1,0 +1,118 @@
+/*变量*/
+body,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #000;
+  font-family: "Microsoft Yahei", Helvetica, arial;
+  text-align: center;
+}
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+.clear {
+  clear: both;
+}
+/*运算*/
+.container {
+  border: 2px solid #000;
+  width: 600px;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+/*混合*/
+/*嵌套*/
+header .left {
+  float: left;
+  width: 30%;
+}
+header .left h1 {
+  margin: 10px auto -20px;
+  font-weight: 900;
+}
+header .middle {
+  float: left;
+  width: 40%;
+}
+header .middle p {
+  margin: 30px auto;
+}
+header .right {
+  float: left;
+  width: 30%;
+}
+header .right h3 {
+  margin: 10px auto 10px;
+  color: #007aff;
+  letter-spacing: 12px;
+}
+header .right h2 {
+  display: inline;
+  color: #EE0000;
+  border-bottom: 1px solid #000;
+  letter-spacing: 0;
+}
+header .right hr {
+  width: 110px;
+}
+article ul {
+  margin: 10px auto;
+}
+article ul li {
+  float: left;
+  width: 1.6rem;
+  line-height: 100%;
+}
+article ul li .active {
+  border: 1px solid #EE0000;
+}
+footer {
+  color: #007aff;
+}
+footer h4 {
+  float: left;
+  margin: 10px 5px 2px 20px;
+  padding: 0;
+}
+footer .arrow1 {
+  float: left;
+  margin-top: 18px;
+  width: 450px;
+  height: 8px;
+  background-color: #007aff;
+}
+footer .arrow2 {
+  float: left;
+  width: 0;
+  height: 0;
+  margin-top: 10px;
+  border: 16px solid;
+  border-left: 0;
+  border-right-color: transparent;
+  border-top: 0;
+  border-bottom-color: #007aff;
+}
+footer p {
+  margin-top: 0;
+  background: #007aff;
+  color: #fff;
+}
