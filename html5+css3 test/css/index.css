@@ -1,0 +1,913 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1000px;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+    font-size: 12px;
+    color: #555;
+    background: #f5f5f5;
+}
+
+
+/*页面头部导航*/
+
+header {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+.header_wrap,.article_wrap,.footer_wrap{
+    width:1000px;
+    margin:0 auto;
+}
+.header_wrap{
+    position: relative;
+}
+header a img {
+    width: 109px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+
+nav {
+    line-height: 60px;
+    height: 60px;
+    margin: 0 15px 0 169px;
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 50px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(53, 181, 88);
+}
+
+nav span a:hover {
+    background: #f5f5f5;
+}
+
+nav a:hover>.arrow-icon {
+    border-left: 1px solid rgb(53, 181, 88);
+    border-bottom: 1px solid rgb(53, 181, 88);
+    animation: rotate 1s ease normal;
+    transform: rotateZ(-225deg);
+}
+
+
+/*页面头部导航动画*/
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(-225deg);
+    }
+    100% {
+        transform: rotateZ(45deg);
+    }
+}
+
+nav span {
+    display: inline-block;
+    width: 17px;
+    height: 100%;
+    float: right;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.college:hover+.coll-div,
+.coll-div:hover {
+    display: block;
+}
+
+.member-class:hover+.member-div,
+.member-div:hover {
+    display: block;
+}
+
+.community:hover+.community-div,
+.community-div:hover {
+    display: block;
+}
+
+.coll-div,
+.member-div,
+.community-div {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 250px;
+    width: 280px;
+    height: 273px;
+    margin: 0;
+    background: #fff;
+}
+
+.member-div {
+    position: absolute;
+    top: 60px;
+    left: 370px;
+    height: 250px;
+}
+
+.community-div {
+    width: 280px;
+    height: 165px;
+    position: absolute;
+    top: 60px;
+    left: 496px;
+}
+
+.coll-div dt {
+    width: 265px;
+    margin: 10px 0 10px 15px;
+    background: #fafafa;
+}
+
+.coll-div dd,
+.member-div dd,
+.community-div dd {
+    width: 280px;
+}
+
+.coll-div a {
+    width: 100%;
+}
+
+.coll-div a i,
+.member-div i,
+.community-div i {
+    display: inline-block;
+    margin: 0 10px;
+    width: 14px;
+    height: 14px;
+}
+
+.coll-web-icon {
+    background: url(../img/allicon.png) no-repeat 0 0;
+    background-size: 64px 64px;
+    background-position: -15px -27px;
+}
+
+.coll-python-icon {
+    background: url(../img/allicon3.png) no-repeat 0 0;
+    background-size: 16px 148px;
+    background-position: -2px -2px;
+}
+
+.coll-go-icon {
+    background: url(../img/allicon3.png) no-repeat 0 0;
+    background-size: 16px 148px;
+    background-position: -2px -38px;
+}
+
+.coll-ios-icon {
+    background: url(../img/allicon3.png) no-repeat 0 0;
+    background-size: 16px 148px;
+    background-position: -2px -82px;
+}
+
+.member-div a,
+.community-div a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #666;
+}
+
+.member-div dd span,
+.community-div dd span {
+    width: auto;
+    float: right;
+    color: #bbb;
+    margin-right: 15px;
+}
+
+.member-div i,
+.community-div i {
+    background: url(../img/allicon.png) no-repeat 0 0;
+    background-size: 64px 64px;
+}
+
+.member-div .kck-icon {
+    background-position: 0 -13px;
+}
+
+.member-div .zylj-icon {
+    background-position: -45px 0;
+}
+
+.member-div .zstx-icon {
+    background-position: -30px -13px;
+}
+
+.member-div .xlkc-icon {
+    background: url(../img/xlkc2.png) no-repeat;
+    background-size: 14px 14px;
+}
+
+.member-div .kcbq-icon {
+    background-position: -15px -13px;
+}
+
+.member-div .hygm-icon {
+    background-position: -16px 0;
+}
+
+.community-div .jswd-icon {
+    background-position: 0 -27px;
+}
+
+.community-div .wiki-icon {
+    background-position: -29px -27px;
+}
+
+.community-div .sq-icon {
+    background-position: 0 2px;
+}
+
+.community-div .zyxz-icon {
+    background-position: -30px 0;
+}
+
+.arrow-icon {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-left: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+    transform: rotatez(-45deg);
+}
+
+.search-icon {
+    background: url(../img/search-icon.png) no-repeat 0 center;
+    background-size: 17px 17px;
+}
+
+.search-icon:hover {
+    background: url(../img/search-icon2.png) no-repeat 0 center;
+    background-size: 17px 17px;
+}
+
+.app-icon {
+    background: url(../img/app-icon.png) no-repeat 0 center;
+    background-size: 17px 17px;
+}
+
+.app-icon:hover {
+    background: url(../img/app-icon2.png) no-repeat 0 center;
+    background-size: 17px 17px;
+}
+
+.app-icon:hover>.show-app {
+    display: block;
+}
+
+.show-app {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.show-app i {
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-color: transparent transparent #999;
+}
+
+.show-app img {
+    width: 120px;
+    height: 160px;
+}
+
+.login-icon {
+    background: url(../img/login-icon.png) no-repeat 0 center;
+    background-size: 17px 17px;
+}
+
+.login-icon:hover+.login-div,
+.login-div:hover {
+    display: block;
+}
+
+.login-div {
+    display: none;
+    width: 120px;
+    height: 176px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    border: 0px;
+    background: #fff;
+}
+
+.login-div .logreg {
+    margin: 0 15px;
+    width: 30px;
+}
+
+.login-div dl dd:first-child:hover {
+    background: #fafafa;
+}
+
+.login-div dl a {
+    display: inline-block;
+    color: #555;
+    width: 100%;
+}
+
+.login-div dl a:hover {
+    color: #35b558;
+}
+
+.login-div dd i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+    background: url(../img/allicon2.png) no-repeat;
+    background-size: 64px 64px;
+}
+
+.login-div .xxzx {
+    background-position: -16px -15px;
+}
+
+.login-div .grzy {
+    background-position: -46px 0;
+}
+
+.login-div .xxtz {
+    background-position: -16px -30px;
+}
+
+.login-div .zhsz {
+    background-position: -31px 0;
+}
+
+
+/*页面主体内容*/
+
+section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner {
+    width: 750px;
+    height: 330px;
+    float: left;
+    background: url(../img/banner-1.jpg) no-repeat;
+}
+
+.login {
+    width: 240px;
+    height: 160px;
+    float: left;
+    margin-left: 10px;
+    padding: 26px 24px 24px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.login img {
+    width: 57px;
+    height: 57px;
+    float: left;
+    margin-right: 15px;
+}
+
+.login span {
+    float: left;
+    color: #555;
+    margin-top: 8px;
+}
+
+.login p {
+    float: left;
+    color: #555;
+    margin: 10px 0;
+}
+
+.btn {
+    width: 85px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #35b558;
+    border: 1px solid #35b558;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #35b558;
+}
+
+.btn-login {
+    display: inline-block;
+    float: left;
+    margin: 20px 10px 0 0;
+}
+
+h2 {
+    clear: both;
+    font-size: 18px;
+    color: #555;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 40px 0 20px 0;
+}
+
+.banner-s {
+    display: block;
+    float: left;
+    width: 240px;
+    height: 160px;
+    margin: 10px 0 0 10px;
+    background: #0f0 url(../img/banner-s.jpg) no-repeat;
+}
+
+.employment {
+    width: 250px;
+    height: 130px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-top: 90px;
+    color: #000;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+}
+
+.employment:hover {
+    color: #35b558;
+}
+
+.employment:first-child {
+    position: relative;
+    background: #fff url(../img/jphp.png) no-repeat center 20px;
+    background-size: 130px 65px;
+}
+
+.employment:first-child i {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/tag_employment.png) no-repeat;
+    background-size: 52px 52px;
+}
+
+.employment:nth-child(2) {
+    background: #fff url(../img/jweb.png) no-repeat center 20px;
+    background-size: 130px 65px;
+}
+
+.employment:nth-child(3) {
+    background: #fff url(../img/jandroid.png) no-repeat center 20px;
+    background-size: 130px 65px;
+}
+
+.employment:nth-child(4) {
+    background: #fff url(../img/jios.png) no-repeat center 20px;
+    background-size: 130px 65px;
+}
+
+.subject {
+    display: inline-block;
+    width: 233px;
+    height: 268px;
+    margin-top: 22px;
+    margin-right: 18px;
+    color: #999;
+    text-decoration: none;
+}
+
+.subject:nth-child(4) {
+    margin-right: 0px;
+}
+
+.subject img {
+    width: 233px;
+    height: 155px;
+}
+
+.subject div {
+    width: 233px;
+    height: 113px;
+    padding: 10px 0 0 14px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.subject p {
+    color: #555;
+    line-height: 18px;
+    height: 36px;
+}
+
+p.sub-time {
+    color: #999;
+    height: 27px;
+}
+
+span.sub-price {
+    color: #ff5c00;
+    font-size: 18px;
+}
+
+span.sub-price:before {
+    content: "¥";
+    font-size: 14px;
+}
+
+span.sub-price2 {
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+
+.web {
+    width: 500px;
+    height: 270px;
+    display: block;
+    float: left;
+    padding-top: 24px;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    background: url(../img/bgweb.jpg) no-repeat;
+    background-size: 500px 270px;
+}
+
+.web i {
+    height: 180px;
+    display: block;
+    margin-bottom: -25px;
+    background: url(../img/cweb.png) no-repeat center center;
+    background-size: 55px 84px;
+}
+
+.web span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.engineer {
+    width: 240px;
+    height: 130px;
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0 0 10px 10px;
+    box-sizing: border-box;
+    background: url(../img/bgpython.jpg) no-repeat;
+    background-size: 240px 130px;
+}
+
+.engineer i {
+    height: 36px;
+    display: block;
+    margin-bottom: 21px;
+    background: url(../img/cpython.png) no-repeat center center;
+    background-size: 36px 36px;
+}
+
+.engineer span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.engineer:nth-of-type(3) {
+    background: url(../img/bggo.jpg) no-repeat;
+    background-size: 240px 130px;
+    /*opacity: 0.7;*/
+}
+
+.engineer:nth-of-type(3) i {
+    background: url(../img/cgo.png) no-repeat center center;
+    background-size: 36px 36px;
+}
+
+.engineer:nth-of-type(4) {
+    background: url(../img/bgios.jpg) no-repeat;
+    background-size: 240px 130px;
+}
+
+.engineer:nth-of-type(4) i {
+    background: url(../img/cios.png) no-repeat center center;
+    background-size: 36px 36px;
+}
+
+.engineer:nth-of-type(5) {
+    cursor: auto;
+    background: url(../img/bgmore.jpg) no-repeat;
+    background-size: 240px 130px;
+}
+
+.engineer:nth-of-type(5) i {
+    background: url(../img/cmore.png) no-repeat center center;
+    background-size: 36px 36px;
+}
+
+.member {
+    display: block;
+    float: left;
+    width: 156px;
+    height: 150px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 85px;
+    margin: 0 12px 10px 0;
+    color: #555;
+    background: #fff url(../img/1_android.png) no-repeat center 30px;
+    background-size: 55px 55px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+.member:hover {
+    border: 1px solid #e1e2e1;
+    box-shadow: 0 2px 6px #ccc;
+}
+
+.member p {
+    color: #35b558;
+    margin-top: 7px;
+}
+
+.member:nth-of-type(2) {
+    background: #fff url(../img/2_iOS.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(3) {
+    background: #fff url(../img/3_swift.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(4) {
+    background: #fff url(../img/4_html5.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(5) {
+    background: #fff url(../img/5_javascript.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(6) {
+    margin-right: 0px;
+    background: #fff url(../img/6_js.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(7) {
+    background: #fff url(../img/7_c.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(8) {
+    background: #fff url(../img/8_java.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(9) {
+    background: #fff url(../img/9_php.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(10) {
+    background: #fff url(../img/10_javaweb.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(11) {
+    background: #fff url(../img/11_Python.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.member:nth-of-type(12) {
+    margin-right: 0px;
+    background: #fff url(../img/12_cocos2d.png) no-repeat center 30px;
+    background-size: 55px 55px;
+}
+
+.btn-member {
+    clear: both;
+    display: block;
+    width: 120px;
+    height: 32px;
+    margin: 30px auto 0;
+}
+
+.student-story div {
+    float: left;
+    margin: 0 0 40px 21px;
+}
+
+.student-story div:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.allstory {
+    width: 318px;
+    height: 119px;
+    color: #555;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    position: relative;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+}
+
+.allstory:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    background: url(../img/storyicon.png) no-repeat;
+    background-size: 14px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.allstory:after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    background: url(../img/storyicon.png) no-repeat;
+    background-size: 14px 10px;
+    transform: rotateZ(180deg);
+    position: absolute;
+    top: 90px;
+    right: 28px;
+}
+
+.squ {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    border-color: #fff transparent transparent;
+    position: absolute;
+    top: 116px;
+    left: 40px;
+}
+
+.student-story img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 15px;
+}
+
+.stu-name {
+    margin: 10px 0 0 15px;
+}
+
+.stu-work {
+    margin: 10px 0 0 88px;
+    color: #999;
+}
+
+
+/*页面底部信息*/
+
+footer {
+    width: 100%;
+    height: 300px;
+    clear: both;
+    padding-top: 25px;
+    color: #999;
+    background: #fff;
+}
+
+footer dd a {
+    text-decoration: none;
+    color: #999;
+}
+
+footer dd a:hover {
+    color: rgb(53, 181, 88);
+}
+
+.logo-footer {
+    width: 215px;
+    height: 215px;
+    float: left;
+}
+
+.logo-footer img {
+    width: 109px;
+    height: 40px;
+}
+
+.logo-footer p {
+    color: #999;
+    margin-top: 20px;
+}
+
+dl {
+    float: left;
+    width: 135px;
+    height: 150px;
+    line-height: 30px;
+}
+
+dt {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.phonenumber {
+    float: right;
+    font-size: 15px;
+}
+
+.phonenumber p {
+    margin-bottom: 15px;
+}
+
+.down-ios,
+.down-and {
+    width: 140px;
+    height: 30px;
+    text-indent: 40px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    background: url(../img/icon-down-ios.png) no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.down-and {
+    background: url(../img/icon-down-and.png) no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.down-ios:hover>.show-app,
+.down-and:hover>.show-app {
+    display: block;
+    top: -175px;
+    left: 17px;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #999;
+}
+
+a.weibo {
+    display: inline-block;
+    float: right;
+    width: 20px;
+    height: 15px;
+    background: url(../img/icon-down-sina.png) no-repeat;
+    background-size: 20px 15px;
+}
+
+a.weixin {
+    display: inline-block;
+    float: right;
+    width: 20px;
+    height: 15px;
+    margin-left: 10px;
+    background: url(../img/icon-down-wechat.png) no-repeat;
+    background-size: 20px 15px;
+}
+
+.copyright img {
+    width: 60px;
+    height: 22px;
+    margin-top: 15px;
+}
