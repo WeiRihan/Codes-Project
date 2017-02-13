@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*标准盒模型*/
+
+.shoes {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    float: left;
+    margin: 100px;
+    border: 5px solid #f00;
+    background-color: #70ff70;
+}
+
+
+/*怪异盒模型*/
+
+.shoes1 {
+    width: 100px;
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: orange;
+}
+
+.box1 {
+    margin: 100px;
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    border: 5px solid #f00;
+    float: left;
+    background-color: #70ff70;
+    box-sizing: border-box;
+}
+
+hr {
+    clear: both;
+}
+
+
+/*弹性盒子分栏*/
+
+.freebox {
+    -webkit-column-count: 3;
+    -webkit-column-rule-style: dotted;
+    -webkit-column-gap: 30px;
+    -moz-column-count: 3;
+    -moz-column-rule-style: dotted;
+    -moz-column-gap: 30px;
+    column-count: 3;
+    column-rule-style: dotted;
+    column-gap: 30px;
+    margin: 10px auto;
+}
+
+div img {
+    width: 320px;
+    height: 200px;
+}
+
+div p {
+    text-indent: 30px;
+}
+
+a.next {
+    display: block;
+    float: right;
+    font-size: 50px;
+}
+
+
+/*旧版弹性盒子居中布局*/
+
+.centerimg {
+    width: 600px;
+    height: 400px;
+    margin: 10px auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    background: #a7ffa7;
+}
+
+
+/*新版弹性盒子排序*/
+
+.contant_row {
+    width: 600px;
+    height: 200px;
+    margin: 10px auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    border: 1px solid #f00;
+}
+
+.contant_column {
+    width: 600px;
+    height: 200px;
+    margin: 10px auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #f00;
+}
+
+.first {
+    width: 100px;
+    height: 100px;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    -webkit-order: 3;
+    -moz-order: 3;
+    order: 3;
+    color: #fff;
+    background: red;
+}
+
+.second {
+    width: 100px;
+    height: 100px;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+    order: 1;
+    color: #fff;
+    background: green;
+}
+
+.third {
+    width: 100px;
+    height: 200px;
+    -webkit-flex: 2;
+    -moz-flex: 1;
+    flex: 1;
+    -webkit-order: 2;
+    -moz-order: 2;
+    order: 2;
+    color: #fff;
+    background: blue;
+}
